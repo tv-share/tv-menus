@@ -1,3 +1,3 @@
-import Example from "./lib/Example";
+import Sidebar from "./lib/Sidebar";
 
-export { Example };
+export { Sidebar };
