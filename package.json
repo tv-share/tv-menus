@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tv-share/tv-react-module-boilerplate.git"
+    "url": "git+https://github.com/tv-share/tv-menus.git"
   },
   "bugs": {
-    "url": "https://github.com/tv-share/tv-react-module-boilerplate/issues"
+    "url": "https://github.com/tv-share/tv-menus/issues"
   },
-  "homepage": "https://github.com/tv-share/tv-react-module-boilerplate#readme"
+  "homepage": "https://github.com/tv-share/tv-menus#readme"
 }
