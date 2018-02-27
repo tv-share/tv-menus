@@ -1,14 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const renderLogo = logo => {
+/**
+ * Renders the Sidebar Component
+ * @param  {Boolean} 	states if the sidebar is expandable or not (optional)
+ * @param  {Boolean} 	states if the sidebar is open or closed (required if !!expandable)
+ * @param  {Array} 		array of the sidbar objects
+ * @param  {String} 	logo that goes on top of the sidebar (optional)
+ * @param  {Function}	openAction is the click function of the menu button
+ * @return {JSX}			Sidebar Component
+ */
+const Sidebar = ({ className = "", expandable, isOpen, items, logo, openAction }) => {
 	return (
-		<img
-			className="logo"
-			src={logo}
-			key="logo"
-		/>
-	); 
+		<div className={`sidebar ${className}`}>
+			{ expandable ? renderMenu(isOpen, openAction) : null }
+			{ !(expandable && !isOpen) ? renderItems(logo, items) : null }
+		</div>
+	);
 };
 
 const renderItems = (logo, items) => {
@@ -27,24 +35,22 @@ const renderItems = (logo, items) => {
 	return to;
 };
 
-const renderBurger = (isOpen, openAction) => {
+const renderLogo = logo => {
 	return (
-		<div className={`burger -${isOpen ? "open" : "closed"}`} onClick={openAction}>
+		<img
+			className="logo"
+			src={logo}
+			key="logo"
+		/>
+	); 
+};
+
+const renderMenu = (isOpen, openAction) => {
+	return (
+		<div className={`menu -${isOpen ? "open" : "closed"}`} onClick={openAction}>
 			<div className="line1" />
 			<div className="line2" />
 			<div className="line3" />
-		</div>
-	);
-};
-
-const Sidebar = props => {
-	const { className, expandable, isOpen, items, logo, openAction } = props;
-	return (
-		<div className={`sidebar${className ? ` ${className}` : ""}`}>
-			{
-				expandable ? renderBurger(isOpen, openAction) : null
-			}
-			{ !(expandable && !isOpen) ? renderItems(logo, items) : null }
 		</div>
 	);
 };

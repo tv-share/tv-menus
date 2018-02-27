@@ -27,7 +27,7 @@ class Workbench extends React.Component {
       },
       {
         id: "3",
-        label: "exemplo 3",
+        label: "exemplo com nome gigantesco 3",
         clickAction: () => console.log("exemplo 3")
       }
     ];
@@ -40,9 +40,7 @@ class Workbench extends React.Component {
           openAction={() => this.setState({ isOpen: !this.state.isOpen })}
           logo="https://vignette.wikia.nocookie.net/logopedia/images/2/29/Windows_95_Logo.svg/revision/latest?cb=20160811163821"
           items={items}
-        >
-          <button>OLA!</button>
-        </Sidebar>
+        />
       </section>
     );
   }
