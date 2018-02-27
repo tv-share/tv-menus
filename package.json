@@ -11,6 +11,7 @@
   "author": "theVelops <contato@thevelops.com> (http://www.thevelops.com)",
   "license": "ISC",
   "dependencies": {
+    "nodemon": "^1.15.1",
     "parcel-bundler": "^1.6.2",
     "prop-types": "^15.6.0",
     "react": "^16.2.0"

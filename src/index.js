@@ -1,3 +1,3 @@
-import Example from "./lib/Example";
+import Header from "./lib/Header";
 
-export { Example };
+export { Header };
