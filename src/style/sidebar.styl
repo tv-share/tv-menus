@@ -1,11 +1,38 @@
 div.sidebar
 	height 100%
-	width 10vw
+	display inline-block
 	border 1px solid black
 	text-align center
+	padding 1em
+	box-sizing border-box
 	.logo
-		height 64px
-		width 64px
+		height 5em
+		width 5em
 		display inline-block
 	.item
 		cursor pointer
+		margin-top .5em
+	.burger
+		cursor pointer
+		height 1em
+		width 1em
+		position relative
+		transition-duration .5s
+		> *
+			width 100%
+			height .2em
+			background-color black
+			transition-duration .5s
+		&.-closed
+			.line1
+				margin-bottom .2em
+			.line2
+				margin-bottom .2em
+		&.-open
+			margin-left calc(100% - 1em)
+			.line1
+				transform rotate(-45deg) translateY(0.28em)
+			.line2
+				background-color transparent
+			.line3
+				transform rotate(45deg) translateY(-0.28em)

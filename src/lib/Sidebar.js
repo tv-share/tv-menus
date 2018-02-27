@@ -11,7 +11,7 @@ const renderLogo = logo => {
 	); 
 };
 
-const renderItems = (logo, items, expandable, isOpen) => {
+const renderItems = (logo, items) => {
 	const to = items.map(item => {
 		return (
 			<div
@@ -25,14 +25,26 @@ const renderItems = (logo, items, expandable, isOpen) => {
 	});
 	logo ? to.unshift(renderLogo(logo)) : null;
 	return to;
+};
 
+const renderBurger = (isOpen, openAction) => {
+	return (
+		<div className={`burger -${isOpen ? "open" : "closed"}`} onClick={openAction}>
+			<div className="line1" />
+			<div className="line2" />
+			<div className="line3" />
+		</div>
+	);
 };
 
 const Sidebar = props => {
-	const { expandable, items, logo, isOpen } = props;
+	const { className, expandable, isOpen, items, logo, openAction } = props;
 	return (
-		<div className="sidebar">
-			{renderItems(logo, items, expandable, isOpen)}
+		<div className={`sidebar${className ? ` ${className}` : ""}`}>
+			{
+				expandable ? renderBurger(isOpen, openAction) : null
+			}
+			{ !(expandable && !isOpen) ? renderItems(logo, items) : null }
 		</div>
 	);
 };
@@ -44,9 +56,12 @@ const item = PropTypes.shape({
 });
 
 Sidebar.propTypes = {
+	className: PropTypes.string,
+	expandable: PropTypes.bool,
+	isOpen: PropTypes.bool,
 	items: PropTypes.arrayOf(item),
 	logo: PropTypes.string,
-	expandable: PropTypes.bool
+	openAction: PropTypes.func
 };
 
 export default Sidebar;
