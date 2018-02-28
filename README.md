@@ -1,9 +1,14 @@
 # tv-menus
 
-## This repo contains
+A collection of menu components
+## Components
 
-CarouselMenu - A horizontal tab bar with left/right arrows
+- [CarouselMenu]() - A horizontal tab bar with left/right arrows
+- [Header]() - A Header with logo and clickable items
+- [Sidebar]() - A Sidebar with logo and clickable items
 
-Header - A Header with logo and clickable items
+## Docs
 
-Sidebar - A Sidebar with logo and clickable items
+
+## Development
+For delevepment checkout [these docs](https://github.com/shareThevelopment/tv-handbook/Development).
