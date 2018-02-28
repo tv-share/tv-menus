@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "../src/style/_index";
 
 import { SidebarExample, HeaderExample } from "../src/index";
 
