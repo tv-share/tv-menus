@@ -11,4 +11,4 @@ A collection of menu components
 
 
 ## Development
-For delevepment checkout [these docs](https://github.com/shareThevelopment/tv-handbook/Development).
+For delevepment checkout [this section](https://github.com/shareThevelopment/tv-handbook/Development).
