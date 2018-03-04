@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctely 1`] = `
+<div
+  className="header "
+>
+  <img
+    onClick={undefined}
+    src="https://vignette.wikia.nocookie.net/logopedia/images/2/29/Windows_95_Logo.svg/revision/latest?cb=20160811163821"
+  />
+  <div
+    className="title"
+  >
+    Apple
+  </div>
+  <div
+    className="items"
+  >
+    <div
+      className="id 1"
+      onClick={[Function]}
+    >
+      Item 1
+    </div>
+    <div
+      className="id 2"
+      onClick={[Function]}
+    >
+      Item 2
+    </div>
+  </div>
+  <div
+    className="options"
+  >
+    <div
+      onClick={[Function]}
+    >
+      <div
+        className="id 9"
+      >
+        Option 2
+      </div>
+    </div>
+    <div
+      onClick={[Function]}
+    >
+      <img
+        src="https://t7.rbxcdn.com/d614151fd257cab3a05e4dc2f60524d4"
+      />
+    </div>
+  </div>
+</div>
+`;
