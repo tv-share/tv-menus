@@ -5,6 +5,7 @@ exports[`renders correctely 1`] = `
   className="header "
 >
   <img
+    className="logo"
     onClick={undefined}
     src="https://vignette.wikia.nocookie.net/logopedia/images/2/29/Windows_95_Logo.svg/revision/latest?cb=20160811163821"
   />
@@ -13,41 +14,39 @@ exports[`renders correctely 1`] = `
   >
     Apple
   </div>
-  <div
+  <ul
     className="items"
   >
-    <div
-      className="id 1"
+    <li
+      id="id 1"
       onClick={[Function]}
     >
       Item 1
-    </div>
-    <div
-      className="id 2"
+    </li>
+    <li
+      id="id 2"
       onClick={[Function]}
     >
       Item 2
-    </div>
-  </div>
-  <div
+    </li>
+  </ul>
+  <ul
     className="options"
   >
-    <div
+    <li
+      id="id 9"
       onClick={[Function]}
     >
-      <div
-        className="id 9"
-      >
-        Option 2
-      </div>
-    </div>
-    <div
+      Option 2
+    </li>
+    <li
+      id="id 10"
       onClick={[Function]}
     >
       <img
         src="https://t7.rbxcdn.com/d614151fd257cab3a05e4dc2f60524d4"
       />
-    </div>
-  </div>
+    </li>
+  </ul>
 </div>
 `;

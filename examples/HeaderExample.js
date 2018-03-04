@@ -33,7 +33,8 @@ const HeaderExample = () => {
     <Header 
       title="Apple" 
       logo="https://vignette.wikia.nocookie.net/logopedia/images/2/29/Windows_95_Logo.svg/revision/latest?cb=20160811163821"
-      clickAction={() => console.log("Click")} 
+      clickAction={() => console.log("Click")}
+      logoClickAction={() => console.log("Logo Click")}
       items={headerItems}
       options={headerOptions}
     />

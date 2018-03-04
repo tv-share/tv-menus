@@ -34,13 +34,13 @@ const Header = ({ className = "", title, logo, logoClickAction, items, options }
 }
 
 const renderLogo = (logo, logoClickAction) => {
-	return <img className="logo" src={logo} onClick={logoClickAction} />
+	return <img className={`logo ${logoClickAction ? "pointer" : ""}`} src={logo} onClick={logoClickAction} />
 }
 
 const renderItems = (items) =>{
 	return items.map(item => {
 		return (
-			<li key={item.id} className={item.id} onClick={item.clickAction}> 
+			<li key={item.id} id={item.id} onClick={item.clickAction}> 
 				{item.name}
 			</li>
 		);
@@ -50,12 +50,10 @@ const renderItems = (items) =>{
 const renderOptions = (options) => {
 	return options.map(option => {
 		return (
-			<li key={option.id} onClick={option.clickAction}>
+			<li id={option.id} key={option.id} onClick={option.clickAction}>
 			{
 				option.name ?
-				<div className={`${option.id}`}> 
-					{option.name} 
-				</div>
+				option.name
 				: null
 			}
 			{

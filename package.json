@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest -v tests/",
+    "test:update": "jest -v -u tests/",
     "dev": "parcel dev/index.html",
     "build": "gulp build"
   },
