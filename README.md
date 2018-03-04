@@ -54,7 +54,7 @@ items | array | array of [items](#items)
 id | string | (required)
 label | string | (required)
 clickAction | func |
-icon | string | Required when _exandable_ is _true_
+icon | string | Required when _expandable_ is _true_
 
 
 ## Development
