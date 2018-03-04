@@ -4,7 +4,7 @@ A collection of menu components
 ## Components
 
 - [Header](#header) - A Header with logo and clickable items
-- [Sidebar](#sidebar) - A Sidebar with logo and clickable items
+- [Sidebar](#sidebar) - A exapandable Sidebar with clickable items
 
 ## Docs
 ### Header
