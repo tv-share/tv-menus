@@ -4,7 +4,7 @@ A collection of menu components
 ## Components
 
 - [Header](#header) - A Header with logo and clickable items
-- [Sidebar]() - A Sidebar with logo and clickable items
+- [Sidebar](#sidebar) - A Sidebar with logo and clickable items
 
 ## Docs
 ### Header
@@ -13,10 +13,10 @@ _Header with logo, a tab bar and options on the right_
 **Field** | **Type** | **Description**
 --- | :---: | ---
 className | string |
-items | array | array with [item](#items) objects as decribed below.
+items | array | array of [items](#items)
 logo | string | url to logo image.
 logoClickAction | func |
-options | array | array with [option](#options) objects as described below. 
+options | array | array of [options](#options)
 title | string |
 
 #### items
@@ -37,6 +37,24 @@ id | string | (required)
 clickAction | func |
 img | string | url to icon image
 name | string |
+
+### Sidebar
+_Sidebar with exanpadle option_
+
+**Field** | **Type** | **Description**
+--- | :---: | ---
+className | string |
+expandable | bool | Default false
+items | array | array of [items](#items)
+
+#### items
+
+**Field** | **Type** | **Description**
+--- | :---: | ---
+id | string | (required)
+label | string | (required)
+clickAction | func |
+icon | string | Required when _exandable_ is _true_
 
 
 ## Development

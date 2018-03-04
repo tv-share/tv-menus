@@ -67,13 +67,13 @@ const renderOptions = (options) => {
 }
 
 const item = PropTypes.shape({
-	id: PropTypes.string,
-	clickAction: PropTypes.func,
-	name: PropTypes.string
+	id: PropTypes.string.isRequired,
+	name: PropTypes.string.isRequired,
+	clickAction: PropTypes.func
 })
 
 const option = PropTypes.shape({
-	id: PropTypes.string,
+	id: PropTypes.string.isRequired,
 	clickAction: PropTypes.func,
 	name: PropTypes.string,
 	img: PropTypes.string

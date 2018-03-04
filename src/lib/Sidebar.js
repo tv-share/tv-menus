@@ -91,7 +91,7 @@ export default class Sidebar extends React.Component {
 
 
 const item = PropTypes.shape({
-	id: PropTypes.string,
+	id: PropTypes.string.isRequired,
 	label: PropTypes.string,
 	clickAction: PropTypes.func,
 	icon: PropTypes.string
@@ -100,8 +100,5 @@ const item = PropTypes.shape({
 Sidebar.propTypes = {
 	className: PropTypes.string,
 	expandable: PropTypes.bool,
-	isOpen: PropTypes.bool,
-	items: PropTypes.arrayOf(item),
-	logo: PropTypes.string,
-	openAction: PropTypes.func
+	items: PropTypes.arrayOf(item)
 };
