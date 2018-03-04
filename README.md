@@ -13,10 +13,10 @@ _Header with logo, a tab bar and options on the right_
 **Field** | **Type** | **Description**
 --- | :---: | ---
 className | string |
-items | array | array with **item** objects as decribed below.
+items | array | array with [item](items) objects as decribed below.
 logo | string | url to logo image.
 logoClickAction | func |
-options | array | array with **option** objects as described below. 
+options | array | array with [option](options) objects as described below. 
 title | string |
 
 #### items
@@ -28,7 +28,7 @@ id | string | (required)
 name | string | (required)
 clickAction | func |
 
-### options
+#### options
 Placed in the far right side
 
 **Field** | **Type** | **Description**
