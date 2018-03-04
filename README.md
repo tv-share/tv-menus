@@ -8,7 +8,6 @@ A collection of menu components
 
 ## Docs
 ### Header
-
 _Header with logo, a tab bar and options on the right_
 
 **Field** | **Type** | **Description**
@@ -22,6 +21,7 @@ title | string |
 
 #### items
 Placed in the left side next to the title
+
 **Field** | **Type** | **Description**
 --- | :---: | ---
 id | string | (required)
@@ -30,6 +30,7 @@ clickAction | func |
 
 ### options
 Placed in the far right side
+
 **Field** | **Type** | **Description**
 --- | :---: | ---
 id | string | (required)
