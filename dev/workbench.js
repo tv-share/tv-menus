@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../src/style/_index";
 
-import HeaderExample from "../examples/HeaderExample";
+import SidebarExample from "../examples/SidebarExample";
 
 class Workbench extends React.Component {
 
@@ -19,7 +19,7 @@ class Workbench extends React.Component {
     
     return (
       <section className="test-area">
-        <HeaderExample />
+        <SidebarExample />
       </section>
     );
   }

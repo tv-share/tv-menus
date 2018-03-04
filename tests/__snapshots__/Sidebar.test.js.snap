@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders expandable closed 1`] = `
+<div
+  className="sidebar "
+  style={
+    Object {
+      "width": "60px",
+    }
+  }
+>
+  <div
+    className="menu-btn -closed"
+    onClick={[Function]}
+  >
+    <div
+      className="line1"
+    />
+    <div
+      className="line2"
+    />
+    <div
+      className="line3"
+    />
+  </div>
+  <ul>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_account_circle_white_24px.svg"
+      />
+      Usuários
+    </li>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_feedback_white_24px.svg"
+      />
+      Relatórios
+    </li>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg"
+      />
+      Configurações dos Bagulhos
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders expandable opened 1`] = `
+<div
+  className="sidebar "
+  style={
+    Object {
+      "width": "202px",
+    }
+  }
+>
+  <div
+    className="menu-btn -open"
+    onClick={[Function]}
+  >
+    <div
+      className="line1"
+    />
+    <div
+      className="line2"
+    />
+    <div
+      className="line3"
+    />
+  </div>
+  <ul>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_account_circle_white_24px.svg"
+      />
+      Usuários
+    </li>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_feedback_white_24px.svg"
+      />
+      Relatórios
+    </li>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg"
+      />
+      Configurações dos Bagulhos
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders not expandable 1`] = `
+<div
+  className="sidebar "
+  style={
+    Object {
+      "width": null,
+    }
+  }
+>
+  <ul>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_account_circle_white_24px.svg"
+      />
+      Usuários
+    </li>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_feedback_white_24px.svg"
+      />
+      Relatórios
+    </li>
+    <li
+      className="item"
+      onClick={[Function]}
+    >
+      <img
+        className="icon"
+        src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_settings_white_24px.svg"
+      />
+      Configurações dos Bagulhos
+    </li>
+  </ul>
+</div>
+`;

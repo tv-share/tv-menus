@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+const CLOSED_WIDTH = "60px";
+
 /**
  * Renders the Sidebar Component
  * @param  {Boolean} 	states if the sidebar is expandable or not (optional)
@@ -10,55 +12,89 @@ import PropTypes from "prop-types";
  * @param  {Function}	openAction is the click function of the menu button
  * @return {JSX}			Sidebar Component
  */
-const Sidebar = ({ className = "", expandable, isOpen, items, logo, openAction }) => {
-	return (
-		<div className={`sidebar ${className}`}>
-			{ expandable ? renderMenu(isOpen, openAction) : null }
-			{ !(expandable && !isOpen) ? renderItems(logo, items) : null }
-		</div>
-	);
-};
+export default class Sidebar extends React.Component {
 
-const renderItems = (logo, items) => {
-	const to = items.map(item => {
+	constructor(props) {
+		super(props);
+
+		this.CLOSED_WIDTH = "60px";
+		this.OPEN_WIDTH;
+
+		this.state = {
+			isOpen: !props.expandable,
+			sidebarWidth: null
+		};
+
+		this.openAction = this.openAction.bind(this);
+	}
+
+	componentDidMount() {
+		if(this.props.expandable) {
+			this.OPEN_WIDTH = this.menu.clientWidth + 2 + "px";
+			this.setState({ sidebarWidth: this.CLOSED_WIDTH });
+		}
+	}
+
+	render() {
+		const { className = "", expandable, items } = this.props;
+		const { sidebarWidth } = this.state;
+		
 		return (
-			<div
-				key={item.id}
-				className="item"
-				onClick={item.clickAction}
-			>
-				{item.label}
+			<div ref={node => this.menu = node} style={{ width: sidebarWidth }} className={`sidebar ${className}`}>
+				{expandable ? this.renderMenuButton() : null}
+				<ul>
+					{this.renderItems(items)}
+				</ul>
 			</div>
 		);
-	});
-	logo ? to.unshift(renderLogo(logo)) : null;
-	return to;
-};
+	}
 
-const renderLogo = logo => {
-	return (
-		<img
-			className="logo"
-			src={logo}
-			key="logo"
-		/>
-	); 
-};
+	renderItems(items) {
+		const to = items.map(item => {
+			return (
+				<li
+					key={item.id}
+					className="item"
+					onClick={item.clickAction}
+				>
+					<img src={item.icon} className="icon" />
+					{item.label}
+				</li>
+			);
+		});
+		return to;
+	}
 
-const renderMenu = (isOpen, openAction) => {
-	return (
-		<div className={`menu -${isOpen ? "open" : "closed"}`} onClick={openAction}>
-			<div className="line1" />
-			<div className="line2" />
-			<div className="line3" />
-		</div>
-	);
-};
+	openAction() {
+		const { isOpen } = this.state;
+		
+		let width;
+		if(isOpen) {
+			width = this.CLOSED_WIDTH;
+		} else {
+			width = this.OPEN_WIDTH;
+		}
+		this.setState({ isOpen: !isOpen, sidebarWidth: width });
+	}
+	
+	renderMenuButton() {
+		const { isOpen } = this.state;
+		return (
+			<div className={`menu-btn -${isOpen ? "open" : "closed"}`} onClick={this.openAction}>
+				<div className="line1" />
+				<div className="line2" />
+				<div className="line3" />
+			</div>
+		);
+	};
+}
+
 
 const item = PropTypes.shape({
 	id: PropTypes.string,
 	label: PropTypes.string,
-	clickAction: PropTypes.func
+	clickAction: PropTypes.func,
+	icon: PropTypes.string
 });
 
 Sidebar.propTypes = {
@@ -69,5 +105,3 @@ Sidebar.propTypes = {
 	logo: PropTypes.string,
 	openAction: PropTypes.func
 };
-
-export default Sidebar;
