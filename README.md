@@ -13,13 +13,13 @@ _Header with logo, a tab bar and options on the right_
 **Field** | **Type** | **Description**
 --- | :---: | ---
 className | string |
-items | array | array of [items](#items)
+items | array | array of [items](#header-items)
 logo | string | url to logo image.
 logoClickAction | func |
-options | array | array of [options](#options)
+options | array | array of [options](#header-options)
 title | string |
 
-#### items
+#### header items
 Placed in the left side next to the title
 
 **Field** | **Type** | **Description**
@@ -28,7 +28,7 @@ id | string | (required)
 name | string | (required)
 clickAction | func |
 
-#### options
+#### header options
 Placed in the far right side
 
 **Field** | **Type** | **Description**
@@ -45,9 +45,9 @@ _Sidebar with exanpadle option_
 --- | :---: | ---
 className | string |
 expandable | bool | Default false
-items | array | array of [items](##items)
+items | array | array of [items](#sidebar-items)
 
-#### items
+#### sidebar items
 
 **Field** | **Type** | **Description**
 --- | :---: | ---
