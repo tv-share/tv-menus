@@ -45,7 +45,7 @@ _Sidebar with exanpadle option_
 --- | :---: | ---
 className | string |
 expandable | bool | Default false
-items | array | array of [items](#items)
+items | array | array of [items](##items)
 
 #### items
 
