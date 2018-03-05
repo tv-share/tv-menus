@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../src/style/_index";
 
-import { SidebarExample, HeaderExample } from "../src/index";
+import SidebarExample from "../examples/SidebarExample";
 
 class Workbench extends React.Component {
 
@@ -19,10 +19,7 @@ class Workbench extends React.Component {
     
     return (
       <section className="test-area">
-        <SidebarExample
-          isOpen={this.state.isOpen}
-          openAction={() => this.setState({ isOpen: !this.state.isOpen })}
-        />
+        <SidebarExample />
       </section>
     );
   }

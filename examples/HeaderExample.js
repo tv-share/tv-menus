@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import { Header } from "../src/index";
 
-const HeaderExample = () => {
+const HeaderExample = ({ logoClickAction }) => {
   const headerItems = [
     {
       id: "id 1",
@@ -33,7 +33,8 @@ const HeaderExample = () => {
     <Header 
       title="Apple" 
       logo="https://vignette.wikia.nocookie.net/logopedia/images/2/29/Windows_95_Logo.svg/revision/latest?cb=20160811163821"
-      clickAction={() => console.log("Click")} 
+      clickAction={() => console.log("Click")}
+      logoClickAction={logoClickAction}
       items={headerItems}
       options={headerOptions}
     />

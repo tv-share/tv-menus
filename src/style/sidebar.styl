@@ -2,39 +2,71 @@ div.sidebar
 	height 100%
 	display inline-block
 	border 1px solid black
-	text-align center
-	padding 1em
+	text-align left
 	box-sizing border-box
 	user-select none
-	max-width 10vw
-	.logo
-		height 4em
-		width 4em
-		display inline-block
-	.item
+	overflow hidden
+	transition width 0.1s
+	color #fafafa
+	max-width 20vw
+	background #212121
+	
+	ul
+		list-style-type none
+		margin 0
+		padding 0
+		max-width 20vw
+
+		li
+			padding 10px 0
+			padding-right 20px
+			clear both
+			cursor pointer
+			white-space nowrap
+			overflow hidden
+			text-overflow ellipsis
+			height 38px
+			font-size 1.2em
+			
+			> *
+				vertical-align middle
+		
+			img
+				display inline-block
+				height 38px
+				width 38px
+				margin 0 10px
+
+			&:hover
+				background-color #616161
+		
+				
+	.menu-btn
 		cursor pointer
-		margin-top .5em
-	.menu
-		cursor pointer
-		height 1em
+		font-size 23px		
 		width 1em
+		height 1em
+		margin 17.5px
+		box-sizing border-box
 		position relative
 		transition-duration .5s
+		float right
+		
 		> *
 			width 100%
 			height .2em
-			background-color black
+			background-color #fafafa
 			transition-duration .5s
-		&.-closed
-			.line1
-				margin-bottom .2em
-			.line2
-				margin-bottom .2em
+
+		.line1
+			margin-bottom .2em
+		.line2
+			margin-bottom .2em
+			
 		&.-open
-			margin-left calc(100% - 1em)
 			.line1
-				transform rotate(-45deg) translateY(0.28em)
+				transform translateY(0.4em) rotate(-45deg)
 			.line2
 				background-color transparent
 			.line3
-				transform rotate(45deg) translateY(-0.28em)
+				transform translateY(-0.4em) rotate(45deg)

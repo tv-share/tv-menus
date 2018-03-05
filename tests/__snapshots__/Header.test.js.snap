@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctely w/ logo click 1`] = `
+<div
+  className="header "
+>
+  <img
+    className="logo pointer"
+    onClick={[Function]}
+    src="https://vignette.wikia.nocookie.net/logopedia/images/2/29/Windows_95_Logo.svg/revision/latest?cb=20160811163821"
+  />
+  <div
+    className="title"
+  >
+    Apple
+  </div>
+  <ul
+    className="items"
+  >
+    <li
+      id="id 1"
+      onClick={[Function]}
+    >
+      Item 1
+    </li>
+    <li
+      id="id 2"
+      onClick={[Function]}
+    >
+      Item 2
+    </li>
+  </ul>
+  <ul
+    className="options"
+  >
+    <li
+      id="id 9"
+      onClick={[Function]}
+    >
+      Option 2
+    </li>
+    <li
+      id="id 10"
+      onClick={[Function]}
+    >
+      <img
+        src="https://t7.rbxcdn.com/d614151fd257cab3a05e4dc2f60524d4"
+      />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`renders correctely without logo click 1`] = `
+<div
+  className="header "
+>
+  <img
+    className="logo "
+    onClick={undefined}
+    src="https://vignette.wikia.nocookie.net/logopedia/images/2/29/Windows_95_Logo.svg/revision/latest?cb=20160811163821"
+  />
+  <div
+    className="title"
+  >
+    Apple
+  </div>
+  <ul
+    className="items"
+  >
+    <li
+      id="id 1"
+      onClick={[Function]}
+    >
+      Item 1
+    </li>
+    <li
+      id="id 2"
+      onClick={[Function]}
+    >
+      Item 2
+    </li>
+  </ul>
+  <ul
+    className="options"
+  >
+    <li
+      id="id 9"
+      onClick={[Function]}
+    >
+      Option 2
+    </li>
+    <li
+      id="id 10"
+      onClick={[Function]}
+    >
+      <img
+        src="https://t7.rbxcdn.com/d614151fd257cab3a05e4dc2f60524d4"
+      />
+    </li>
+  </ul>
+</div>
+`;
