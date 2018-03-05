@@ -1,6 +1,12 @@
 # tv-menus
 
 A collection of menu components
+
+## Installing
+```bash
+npm install --save tv-menus
+```
+
 ## Components
 
 - [Header](#header) - A Header with logo and clickable items
