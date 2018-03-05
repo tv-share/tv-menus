@@ -1,6 +1,6 @@
 {
   "name": "tv-menus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of menu components",
   "main": "index.js",
   "scripts": {
