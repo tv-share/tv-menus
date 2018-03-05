@@ -1,8 +1,9 @@
+gulpfile.js
+.babelrc
+.gitignore
+.eslintrc
 dev/
 src/
 examples/
 tests/
-.babelrc
-.gitignore
-gulpfile.js
 .cache/

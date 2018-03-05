@@ -13,19 +13,19 @@ import PropTypes from "prop-types";
 */
 const Header = ({ className = "", title, logo, logoClickAction, items, options }) => {
 	return (
-		<div className={`header ${className}`}>
+		<div className={`tv-header ${className}`}>
 			
 			{logo ? renderLogo(logo, logoClickAction) : null}
 			
-			<div className="title">
+			<div className="tv-title">
 				{title}
 			</div>
 
-			<ul className="items">
+			<ul className="tv-items">
 				{items ? renderItems(items) : null}
 			</ul>
 
-			<ul className="options">
+			<ul className="tv-options">
 				{options ? renderOptions(options) : null}
 			</ul>
 			
@@ -34,7 +34,7 @@ const Header = ({ className = "", title, logo, logoClickAction, items, options }
 };
 
 const renderLogo = (logo, logoClickAction) => {
-	return <img className={`logo ${logoClickAction ? "pointer" : ""}`} src={logo} onClick={logoClickAction} />;
+	return <img className={`tv-logo ${logoClickAction ? "-pointer" : ""}`} src={logo} onClick={logoClickAction} />;
 };
 
 const renderItems = (items) =>{

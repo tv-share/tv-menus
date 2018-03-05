@@ -6,6 +6,10 @@ A collection of menu components
 ```bash
 npm install --save tv-menus
 ```
+In you style index add:
+```css
+@import path/to/node_modules/tv-menus/dist/style.css
+```
 
 ## Components
 
