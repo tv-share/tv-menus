@@ -1,4 +1,8 @@
 dev/
 src/
+examples/
+tests/
+.babelrc
+.gitignore
+gulpfile.js
 .cache/
-dev/build
