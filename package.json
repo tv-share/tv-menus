@@ -1,7 +1,7 @@
 {
   "name": "tv-menus",
   "version": "1.0.0",
-  "description": "A boilerplate for building react modules",
+  "description": "A collection of menu components",
   "main": "index.js",
   "scripts": {
     "test": "jest -v tests/",

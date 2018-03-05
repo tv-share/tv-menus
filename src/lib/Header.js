@@ -31,11 +31,11 @@ const Header = ({ className = "", title, logo, logoClickAction, items, options }
 			
 		</div>
 	);
-}
+};
 
 const renderLogo = (logo, logoClickAction) => {
-	return <img className={`logo ${logoClickAction ? "pointer" : ""}`} src={logo} onClick={logoClickAction} />
-}
+	return <img className={`logo ${logoClickAction ? "pointer" : ""}`} src={logo} onClick={logoClickAction} />;
+};
 
 const renderItems = (items) =>{
 	return items.map(item => {
@@ -45,39 +45,39 @@ const renderItems = (items) =>{
 			</li>
 		);
 	});
-}
+};
 
 const renderOptions = (options) => {
 	return options.map(option => {
 		return (
 			<li id={option.id} key={option.id} onClick={option.clickAction}>
-			{
-				option.name ?
-				option.name
-				: null
-			}
-			{
-				option.img ?
-				<img src={option.img} />
-				: null
-			}
+				{
+					option.name ?
+						option.name
+						: null
+				}
+				{
+					option.img ?
+						<img src={option.img} />
+						: null
+				}
 			</li>
 		);
 	}).reverse();
-}
+};
 
 const item = PropTypes.shape({
 	id: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
 	clickAction: PropTypes.func
-})
+});
 
 const option = PropTypes.shape({
 	id: PropTypes.string.isRequired,
 	clickAction: PropTypes.func,
 	name: PropTypes.string,
 	img: PropTypes.string
-})
+});
 
 Header.propTypes = {
 	title: PropTypes.string,
