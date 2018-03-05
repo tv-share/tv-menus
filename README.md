@@ -45,7 +45,7 @@ img | string | url to icon image
 name | string |
 
 ### Sidebar
-_Sidebar with exanpadle option_
+_Sidebar with expandable option_
 
 **Field** | **Type** | **Description**
 --- | :---: | ---
@@ -64,4 +64,4 @@ icon | string | Url to icon image. Required when _expandable_ is _true_.
 
 
 ## Development
-For delevepment checkout [this section](https://github.com/shareThevelopment/tv-handbook/Development).
+For development checkout [this section](https://github.com/shareThevelopment/tv-handbook/Development).
