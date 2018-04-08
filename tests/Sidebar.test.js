@@ -1,6 +1,6 @@
 import React from 'react';
 import SidebarExample from "../examples/SidebarExample";
-import { Sidebar } from "../src/index";
+import Sidebar from "../src/Sidebar/Sidebar";
 import renderer from 'react-test-renderer';
 
 it('renders not expandable', () => {
