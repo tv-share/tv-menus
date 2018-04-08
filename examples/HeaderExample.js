@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { Header } from "../src/index";
+import Header from "../src/Header";
 
 const HeaderExample = ({ logoClickAction }) => {
   const headerItems = [
