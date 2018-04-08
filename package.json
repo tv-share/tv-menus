@@ -1,6 +1,6 @@
 {
   "name": "@thevelops/tv-menus",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A collection of menu components",
   "main": "index.js",
   "scripts": {
