@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import "../src/Sidebar/sidebar.styl";
+import "../src/Header/header.styl";
+
 import SidebarExample from "../examples/SidebarExample";
 import HeaderExample from "../examples/HeaderExample";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Sidebar from "../src/Sidebar";
+import Sidebar from "../src/Sidebar/Sidebar";
 
 const SidebarExample = ({ expandable }) => {
   const sidebarItems = [
