@@ -49,8 +49,6 @@ gulp.task('js', (cb) => {
 gulp.task('css', (cb) => {
     const tasks = [
         gulp.src(['src/**/*.styl']),
-        stylus(),
-        cleanCSS({compatibility: 'ie8'}),
         gulp.dest('dist')
     ];
 
